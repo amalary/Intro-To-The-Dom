@@ -33,8 +33,27 @@ const h2humm = document.getElementById('hummer');
 
 console.log(h2humm); 
 
-// QquerySelector 
+// querySelector 
 
+// Returns the first element that a descendant of node that matches selectors 
+
+const titleByQuerySelector = document.querySelector('#hummer'); 
+
+console.log({titleByQuerySelector})
+
+const pEl = document.querySelector('.cool');
+
+console.log({pEl}); 
+
+// Change the content of the element 
+
+// InnerHTML 
+
+titleEl.innerHTML = '<h2>Welcome Home</h2> '
+
+// Text content 
+
+titleEl.textContent = 'Bienvenidos al DOM' 
 
 
 
