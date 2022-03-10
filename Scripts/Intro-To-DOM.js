@@ -2,8 +2,6 @@
 
 // DOM Document Object Model 
 // Note 
-
-
 const documents = {
     body:{
         h1: {
@@ -91,6 +89,51 @@ console.log('after', titleEl);
 const isIDInElement = titleEl.hasAttribute('id'); 
 
 console.log(isIDInElement); 
+
+
+const visitGoogle = document.querySelector('#visitGoogle'); 
+
+visitGoogle.setAttribute('href','www.google.com');
+visitGoogle.setAttribute('target','_blank')
+// console.log({visitGoogle})
+
+
+// Set Attribute of Element CLasses 
+
+const bodyClassList = document.body.classList;
+
+console.log(bodyClassList);
+
+bodyClassList.add('grape','wow')
+
+console.log(bodyClassList); 
+
+
+// Adding classes with spread operator 
+const classesToAdd = ['red','darker','container','green','black']
+
+bodyClassList.add(...classesToAdd);
+
+console.log(bodyClassList)
+
+// Removing a Class 
+bodyClassList.remove('red')
+console.log(bodyClassList)
+console.log(bodyClassList.contains('red'))
+
+// Toggling a class
+
+bodyClassList.toggle('red'); 
+console.log(bodyClassList)
+
+// Contains
+
+bodyClassList.contains('darker')
+console.log(bodyClassList.contains('red'))
+
+
+
+
 
 
 
