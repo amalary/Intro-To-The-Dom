@@ -154,6 +154,12 @@ const liListQuerySelector = document.querySelectorAll('.comment');
 
 console.log('by query selector',liListQuerySelector);
 
+// Iterating over a collection of elements 
+
+liListQuerySelector.forEach( li => li.style.color = 'red'); 
+
+liListQuerySelector.forEach( li => li.style.fontSize = '30px'); 
+
 
 
 
