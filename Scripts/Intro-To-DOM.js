@@ -49,11 +49,51 @@ console.log({pEl});
 
 // InnerHTML 
 
-titleEl.innerHTML = '<h2>Welcome Home</h2> '
+titleEl.innerHTML = '<h2> for <strong>Today</strong></h2> '
 
 // Text content 
 
-titleEl.textContent = 'Bienvenidos al DOM' 
+// titleEl.textContent = 'for <strong>Today</strong>' 
+
+// Change the style of an element 
+
+titleEl.style.textAlign = 'center'; 
+
+titleEl.style.color = 'yellow';
+
+titleEl.style.backgroundColor = 'aqua'; 
+
+
+// Attributes of an element 
+
+// getAttribute(name) this method returns the value of the ttribute that you pass 
+
+//  If the element doesn't have an attribute it will return null or an empty string 
+
+console.log('id attr:',titleEl.getAttribute('id')); 
+
+// setAttrbute(name, value)
+
+// sets the value of the attr on the specified element 
+
+// if the attr aleady exists the value is updated 
+
+console.log('before', titleEl);
+
+
+titleEl.setAttribute('class','primaryHeading')
+
+console.log('after', titleEl);
+
+
+// hasAttribute
+
+const isIDInElement = titleEl.hasAttribute('id'); 
+
+console.log(isIDInElement); 
+
+
+
 
 
 
