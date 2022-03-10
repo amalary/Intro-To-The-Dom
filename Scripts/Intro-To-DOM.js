@@ -131,6 +131,30 @@ console.log(bodyClassList)
 bodyClassList.contains('darker')
 console.log(bodyClassList.contains('red'))
 
+// Replace Method
+
+bodyClassList.replace('red','rouge')
+
+console.log(bodyClassList)
+
+// Selecting Multiple Elements 
+
+const liListTagName = document.getElementsByTagName('li');
+
+console.log({liListTagName}); 
+
+const liListClassName = document.getElementsByClassName('comment');
+
+console.log({liListClassName}); 
+
+
+// querySelectorAll
+
+const liListQuerySelector = document.querySelectorAll('.comment'); 
+
+console.log('by query selector',liListQuerySelector);
+
+
 
 
 
